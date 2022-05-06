@@ -6,7 +6,7 @@ let btn = document.querySelector('.mdc-button');
 
 
 btn.addEventListener("click", () => {
-  //console.log("hello");
+  console.log("hello");
   var x = document.getElementById("SecondButton");
   var y = document.getElementById("firstButton");
   var z = document.getElementById("thirdbutton");
@@ -128,9 +128,6 @@ map.addEventListener("click", () => {
 //hello
 let btn3 = document.querySelector('.mdc_button3');
 
-
-
-
 btn3.addEventListener("click", () => {
   var x = document.getElementById("SecondButton");
   var y = document.getElementById("firstButton");
@@ -154,12 +151,86 @@ btn3.addEventListener("click", () => {
    var g = document.getElementById("ComedyMovies");
     g.style.display = "block";
 
-  document.getElementById("chart_div").style.height = "1000px";
+//   document.getElementById("chart_div").style.height = "1000px";
 
+// const ctx = document.getElementById("mychart").getContext("2d");
+//   const labels = [
+//     "Ghostbusters Afterlife",
+//     "Cruella",
+//     "Space Jam: A New Legacy",
+//     "The Hitman’s Wife’s Bodyguard",
+//   "The French Dispatch",
+//   "Dazed and Confused",
+//    "The House Next Door",
+//   "Here Today",
+// "The War with Grandpa",
+// "Queen Bees",	
+// "Together Together",
+// "Honsla Rakh",
+// "Scott Pilgrim vs. The World",
+// "Un rescate de huevitos",
+// "French Exit",
+// "Ghostbusters",
+// "Jathi Ratnalu",
+// "Bo Gia",
+// "Blithe Spirit",
+// "I’m Your Man",
+// "Délicieux",
+// "Once I Was Engaged",
+// "Half Brothers",
+// "Together",
+// "Shiva Baby",
+// "Walking with Herb",	
+// "Tango Shalom",
+// "Christmas Vs The Walters",
+// "The Nowhere Inn",
+// "Last Call",
+// "Senior Moment",
+// "Mainstream",
+// "La daronne",
+// "France",
+// "Our Ladies",
+// "The Ladykillers",
+// "Mandibules",
+// "How It Ends",
+// "First Date",
+// "Best Sellers",
+// "Secret Agent",
+// "The Incredible", 
+// "Zombie Bro",
+// "El Planeta",
+// "Here After",
+// "Rock Paper Scissors",
+// "Deux",
+// "Project Space",
+// "Opération Portugal",
+// "Elbow Grease",
+// "Killer" 	
+//   ];
 
+//   const data = {
+//     labels,
+//     datasets: [
+//       {
+//       data:[1, 2, 3, 4,5,6,7,8,9,10,
+//            11,12,13,14,15,16,17,18,19,20,
+//            21,22,23,24,25,26,27,28,29,30,
+//            31,32,33,34,35,36,37,38,39,40,
+//            41,42,43,44,45,46,47,48,49,50],
+//       label: "Comedy Movie Ranking 2021",
+//       }
+//     ],
+//   };
 
+// const config = {
+//   type: 'line',
+//   data: data,
+//   options: {
+//     responsive: true,
+//   },
+// };
 
-
+//   const myChart = new Chart(ctx, config);
 
   
 var back = document.getElementById("backButton");
