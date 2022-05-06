@@ -27,7 +27,7 @@
 
     <script defer src="https://cdn.aerisapi.com/sdk/js/latest/aerisweather.min.js"></script>
   <link rel="stylesheet" href="https://cdn.aerisapi.com/sdk/js/latest/aerisweather.css">
-
+ <link rel="manifest" href="/manifest.webmanifest">
 </head>
 
 <body>
@@ -50,6 +50,7 @@
 
   
 <div id = HomeScreen class = "HomeScreen"> 
+  <div id="quote" class="quote"><span><h2>         🌷 Beauty is everywhere. You only have to look to see it. 🌷</h2></span></div>
  <div id = "firstButton" class= "first-button"  div>
   <button class="mdc-button mdc-button--raised">
   <span class="mdc-button__label">Age predictor
@@ -64,12 +65,27 @@
 
  <div id = "thirdbutton" class= "third-button"  div>
  <button class="mdc-button mdc-button--raised mdc_button3">
-  <span class="mdc-button__label">Fun Charts</span>
+  <span class="mdc-button__label">Comedy Point</span>
 </button>
+  
+   
 </div>
   
 </div>
-
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+ <div id="gify" class="gify">
+     <iframe src="https://giphy.com/embed/A77Hwf9yoPAZYWNDCy" width="300" height="380" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/laugh-live-love-A77Hwf9yoPAZYWNDCy"></a></p>
+   </div>
   
 <div  class = "Uni_List" id = "Uni_List"> 
 <div class="card">
@@ -96,7 +112,7 @@
 <!-- div for chart  -->
   <div class = "ComedyMovies" id = "ComedyMovies" >  
      <div id = cPara>
-     <h1 id = "header1"> Comedy Movies and TV Shows</h1>
+     <h1 id = "header1"> Comedy Movies and Actors</h1>
       <p id = "paragraph1">
      If there is one way to bring a smile to someone’s face, it is laughter. Funny jokes, comical stunts, sarcasm- Every person is different when it comes to what makes them laugh. Some find dry humor comical. Others think sarcasm or joke-filled ranting are the best. ‘Comedy’ is such a broad term, broad enough to allow everyone to find something they find comical. In fact, ‘comedy’ includes a specific type of drama, one where the protagonist is joyful and happy endings are expected. It allows you to escape reality. When we say the word ‘comedy’ in the present, we are generally referring to a type of performance which provides humor. However, in its broadest sense, comedy has only one purpose: comedy makes people smile and…show more content…
 Writers at the time such as Aristophanes and Menander wrote comedy similarly to how we do today, mocking politicians, fellow writers, and Greek philosophers (Mark Cartwright). The word ‘comedy’ is derived from Middle English, from Medieval Latin comoedia, from Latin, ‘drama with a happy ending’ (Merriam-Webster). This joyful type of performance may be why we commonly use the word ‘comedy’ to talk about jokes, humor, and hilarious performers. Comedy is meant to bring us joy and relief from reality’s negativity. Mary O’Hara wrote about comedy for a BBC article titled “How Comedy Makes us Better People”: “Comedy is more than just a pleasant way to pass an evening, humour more than something to amuse. They’re interwoven into the fabric of our everyday existence. Whether you’re sharing an amusing story down the pub, making a self-deprecating joke after someone pays you a compliment or telling a dark joke at a funeral, humour is everywhere. (O’Hara)” This is certainly an accurate statement about modern comedy. 
@@ -106,17 +122,19 @@ Writers at the time such as Aristophanes and Menander wrote comedy similarly to 
     <h2 id = "header2"> Best Comedy Movies</h2>   
 
 
-<!--     <div id="chart_div">
+    <div class="chart_div" id="chart_div">
       <canvas id="mychart"></canvas>
-    </div> -->
+    </div>
 
     <br>
 
 
-     <h2 id = "header2">Best Comedy TV shows</h2> 
+     <h2 id = "header2">Best Comedy Actors 2021</h2> 
 
 
-<div id="chart_div2"></div>
+<div id="chart_div2" class="chart_div2">
+    <canvas id="mychart1"></canvas>
+</div>
 </div>
 
 <div id  = "backButton" class = "backButton">
@@ -129,7 +147,11 @@ arrow_back
   <div class = "map" id="map"></div>
 
 </main>    
-  
+    <script src="script.js">
+            if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  };
+    </script>
 
 
 </body>

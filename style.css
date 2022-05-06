@@ -59,7 +59,7 @@
 
 .first-button{
   position: absolute;
-  top:80%;
+  top:50%;
   right: 75%;
   width: 120px;
   transform: translateY(-50%);
@@ -68,7 +68,7 @@
 
 .second-button{
   position: absolute;
-   top:80%;
+   top:50%;
   right: 40%;
   width: 120px;
   transform: translateY(-50%);
@@ -77,13 +77,18 @@
 
 .third-button{
   position: absolute;
-   top:80%;
+   top:50%;
    right: 5%;
   width: 120px;
   transform: translateY(-50%);
   
 }
-
+.gify{
+  position: relative;
+left: 40%;
+  display: block;
+  
+}
 #firstButton{
   display: block;
 }
@@ -203,6 +208,10 @@ button {
   display: none;
 }
 
+
+
+
+
 #header1{
   text-align: center;
 }
@@ -212,12 +221,24 @@ button {
   text-align: center;
 }
 
-
+.chart_div2{
+  position: relative;
+  width: 50vw;
+  height: 50vh;
+}
+.chart_div{
+  position: relative;
+  width: 50vw;
+  height: 50vh;
+}
 #chart_div{
    height: 200%;
    width: 100%;
 }
-
+#chart_div2{
+   height: 200%;
+   width: 100%;
+}
 
 #paragraph1{
   margin: 10px;
@@ -245,7 +266,13 @@ button {
       display: none;
   }
 
+.quote{
 
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  display: block;
+}
 
 
 
